@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>CCS New Building</title>
+    <style type="text/css">
+
+
+        #box3a{
+            background-color:#A9A9A9;
+            width: 200px;
+            height: 100px;
+            top: 80px;
+            left: 80px;
+            position: absolute;
+            z-index: 0;
+        }
+        #box3b{
+            background-color:#A9A9A9;
+            width: 200px;
+            height: 100px;
+            top: 80px;
+            left: 280px;
+            position: absolute;
+            z-index: 0;
+        }
+        #vertical3c{
+            background-color: #404040;
+            width: 150px;
+            height: 350px;
+            top: 30px;
+            left: 480px;
+            position: absolute;
+            z-index: 12;
+            box-shadow: 0 0 10px #333;
+        }
+        #box3d{
+            background-color: #A9A9A9;
+            width: 200px;
+            height: 100px;
+            top: 80px;
+            left: 630px;
+            position: absolute;
+            z-index: 0;
+        }
+
+       
+        #box2a{
+            background-color: #A9A9A9;
+            width: 200px;
+            height: 100px;
+            top: 180px;
+            left: 80px;
+            position: absolute;
+            z-index: 0;
+        }
+        #box2b{
+            background-color: #A9A9A9;
+            width: 200px;
+            height: 100px;
+            top: 180px;
+            left: 280px;
+            position: absolute;
+            z-index: 0;
+        }
+        #box2c{
+            background-color:#A9A9A9;
+            width: 200px;
+            height: 100px;
+            top: 180px;
+            left: 630px;
+            position: absolute;
+            z-index: 0;
+        }
+
+        #box1a{
+            background-color: #A9A9A9;
+            width: 200px;
+            height: 100px;
+            top: 280px;
+            left: 80px;
+            position: absolute;
+            z-index: 0;
+        }
+        #box1b{
+            background-color: #A9A9A9;
+            width: 200px;
+            height: 100px;
+            top: 280px;
+            left: 280px;
+            position: absolute;
+            z-index: 0;
+        }
+        #box1c{
+            background-color: #A9A9A9;
+            width: 200px;
+            height: 100px;
+            top: 280px;
+            left: 630px;
+            position: absolute;
+            z-index: 0;
+        }
+
+        #doorAa{
+            background-color: #6F8FAF;
+            width: 25px;
+            height: 50px;
+            top: 50px;
+            left: 20px;
+            position: absolute;
+            z-index: 1;
+        }
+        #doorAb{
+            background-color: #6F8FAF;
+            width: 25px;
+            height: 50px;
+            top: 50px;
+            left: 155px;
+            position: absolute;
+            z-index: 1;
+        }
+
+        #doorknobA{
+            background-color: #484848;
+            height: 5px;
+            width: 5px;
+            top: 25px;
+            right: 2px;
+            position: absolute;
+            z-index: 2;
+            border-radius: 50%;
+        }
+        #doorknobB{
+            background-color: #484848;
+            height: 5px;
+            width: 5px;
+            top: 25px;
+            left: 2px;
+            position: absolute;
+            z-index: 2;
+            border-radius: 50%;
+        }
+
+        #rail3A{
+            background-color: #505050;
+            height: 20px;
+            width: 400px;
+            top: 160px;
+            left: 80px;
+            position: absolute;
+            z-index: 5;
+            box-shadow: 0 -5px 7px -5px #333;
+        }
+
+        #rail3B{
+            background-color: #505050;
+            height: 20px;
+            width: 200px;
+            top: 160px;
+            left: 630px;
+            position: absolute;
+            z-index: 5;
+            box-shadow: 0 -5px 7px -5px #333;
+        }
+        #rail2A{
+            background-color: #505050;
+            height: 20px;
+            width: 400px;
+            top: 260px;
+            left: 80px;
+            position: absolute;
+            z-index: 5;
+            box-shadow: 0 -5px 7px -5px #333;
+        }
+        #rail2B{
+            background-color: #505050;
+            height: 20px;
+            width: 200px;
+            top: 260px;
+            left: 630px;
+            position: absolute;
+            z-index: 5;
+            box-shadow: 0 -5px 7px -5px #333;
+        }
+
+        #rail1A{
+            background-color: #505050;
+            height: 20px;
+            width: 400px;
+            top: 360px;
+            left: 80px;
+            position: absolute;
+            z-index: 5;
+            box-shadow: 0 -5px 7px -5px #333;
+        }
+        #rail1B{
+            background-color: #505050;
+            height: 20px;
+            width: 200px;
+            top: 360px;
+            left: 630px;
+            position: absolute;
+            z-index: 5;
+            box-shadow: 0 -5px 7px -5px #333;
+        }
+
+        #postA{
+            background-color: #787878;
+            height: 300px;
+            width: 20px;
+            top: 80px;
+            left: 170px;
+            position: absolute;
+            z-index: 6;
+           
+        }
+        #postB{
+            background-color: #787878;
+            height: 300px;
+            width: 20px;
+            top: 80px;
+            left: 270px;
+            position: absolute;
+            z-index: 6;
+        }
+        #postC{
+            background-color: #787878;
+            height: 300px;
+            width: 20px;
+            top: 80px;
+            left: 370px;
+            position: absolute;
+            z-index: 6;
+        }
+        #postD{
+            background-color: #787878;
+            height: 300px;
+            width: 20px;
+            top: 80px;
+            left: 720px;
+            position: absolute;
+            z-index: 6;
+        }
+        
+        #top{
+            background-color: #404040;
+            height: 30px;
+            width: 890px;
+            top: 50px;
+            left: 60px;
+            position: absolute;
+            z-index: 10;
+        }
+
+        #lign3A{
+            background-color: #e0e0e0;
+            height: 10px;
+            width: 410px;
+            top: 75px;
+            left: 70px;
+            position: absolute;
+            z-index: 15;
+        }
+        #lign3B{
+            background-color: #e0e0e0;
+            height: 10px;
+            width: 320px;
+            top: 75px;
+            left: 630px;
+            position: absolute;
+            z-index: 15;
+        }
+
+        #lign2A{
+            background-color: #e0e0e0;
+            height: 10px;
+            width: 410px;
+            top: 175px;
+            left: 70px;
+            position: absolute;
+            z-index: 15;
+        }
+        #lign2B{
+            background-color: #e0e0e0;
+            height: 10px;
+            width: 210px;
+            top: 175px;
+            left: 630px;
+            position: absolute;
+            z-index: 15;
+        }
+
+        #lign1A{
+            background-color: #e0e0e0;
+            height: 10px;
+            width: 410px;
+            top: 275px;
+            left: 70px;
+            position: absolute;
+            z-index: 15;
+        }
+        #lign1B{
+            background-color: #e0e0e0;
+            height: 10px;
+            width: 210px;
+            top: 275px;
+            left: 630px;
+            position: absolute;
+            z-index: 15;
+        }
+
+        #window{
+            background-color: #A7C7E7;
+            height: 170px;
+            width: 100px;
+            top: 80px;
+            left: 505px;
+            position: absolute;
+            z-index: 12;
+        } 
+
+        #windowline1{
+            background-color: #F0FFFF;
+            height: 170px;
+            width: 5px;
+            top: 80px;
+            left: 520px;
+            position: absolute;
+            z-index: 12;
+        }
+
+        #windowline2{
+            background-color: #F0FFFF;
+            height: 170px;
+            width: 5px;
+            top: 80px;
+            left: 542px;
+            position: absolute;
+            z-index: 12;
+        }
+
+        #windowline3{
+            background-color: #F0FFFF;
+            height: 170px;
+            width: 5px;
+            top: 80px;
+            left: 562px;
+            position: absolute;
+            z-index: 12;
+        }
+
+        #windowline4{
+            background-color: #F0FFFF;
+            height: 170px;
+            width: 5px;
+            top: 80px;
+            left: 584px;
+            position: absolute;
+            z-index: 12;
+        }
+
+        #windowline1V{
+            background-color: #F0FFFF;
+            height: 5px;
+            width: 100px;
+            top: 100px;
+            left: 505px;
+            position: absolute;
+            z-index: 12;
+        }
+
+        #windowline2V{
+            background-color: #F0FFFF;
+            height: 5px;
+            width: 100px;
+            top: 140px;
+            left: 505px;
+            position: absolute;
+            z-index: 12;
+        }
+
+        #windowline3V{
+            background-color: #F0FFFF;
+            height: 5px;
+            width: 100px;
+            top: 180px;
+            left: 505px;
+            position: absolute;
+            z-index: 12;
+        }
+        #windowline4V{
+            background-color: #F0FFFF;
+            height: 5px;
+            width: 100px;
+            top: 220px;
+            left: 505px;
+            position: absolute;
+            z-index: 12;
+        }
+
+        #sign{
+            background-color: #686868;
+            height: 50px;
+            width: 150px;
+            top: 250px;
+            left: 480px;
+            position: absolute;
+            z-index: 12;
+            text-align: center;
+            font-size: x-small;
+            color: white;
+        }
+
+        #entry{
+            background-color: #A9A9A9;
+            width: 100px;
+            height: 80px;
+            top: 300px;
+            left:505px;
+            position: absolute;
+            z-index: 16;
+        }
+
+        #entryStairs1{
+            background-color: #202020;
+            width: 100px;
+            height: 5px;
+            top: 375px;
+            left:505px;
+            position: absolute;
+            z-index: 16;
+        }
+        #entryStairs2{
+            background-color: #505050;
+            width: 100px;
+            height: 5px;
+            top: 370px;
+            left:505px;
+            position: absolute;
+            z-index: 16;
+        }
+
+        #floor{
+            background-color: #888888;
+            width: 100px;
+            height: 5px;
+            top: 365px;
+            left:505px;
+            position: absolute;
+            z-index: 16;
+           
+        }
+        #handrail{
+            background-color: #808080;
+            width: 6px;
+            height: 45px;
+            top: 320px;
+            left:560px;
+            position: absolute;
+            z-index: 16;
+        }
+        #handrail2{
+            background-color: #808080;
+            width: 57px;
+            height: 20px;
+            top: 300px;
+            left:505px;
+            position: absolute;
+            z-index: 17;
+        }
+
+        #s1{
+            background-color: #888888;
+            width: 40px;
+            height: 10px;
+            top: 335px;
+            left:565px;
+            position: absolute;
+            z-index: 18;
+            
+        }
+        #s2{
+            background-color: #989898;
+            width: 40px;
+            height: 10px;
+            top: 345px;
+            left:565px;
+            position: absolute;
+            z-index: 18;
+        }
+        #s3{
+            background-color: #b0b0b0;
+            width: 40px;
+            height: 10px;
+            top: 355px;
+            left:565px;
+            position: absolute;
+            z-index: 18;
+        }
+
+        #winClass{
+            background-color: #A7C7E7;
+            height: 50px;
+            width: 90px;
+            top: 15px;
+            left: 55px;
+            position: absolute;
+            z-index: 12;
+        }
+
+        #side{
+            background-color: #787878;
+            height: 330px;
+            width: 120px;
+            top: 50px;
+            left: 830px;
+            position: absolute;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+
+<body>
+    <!--3rdfloor-->
+
+    <!--3rdFloor 1stRoom-->
+    <div id="box3a">
+
+        <div id="winClass"></div>
+
+        <div id="doorAa">
+            <div id="doorknobA"></div>
+        </div>
+        <div id="doorAb">
+            <div id="doorknobB"></div>
+        </div>
+
+    </div>
+
+    <!--3rdFloor 2ndRoom-->
+    <div id="box3b">
+
+        <div id="winClass"></div>
+
+        <div id="doorAa">
+            <div id="doorknobA"></div>
+        </div>
+        <div id="doorAb">
+            <div id="doorknobB"></div>
+        </div>
+    </div>
+
+    <div id="vertical3c"></div>
+
+    <!--3rdFloor 3rdRoom-->
+    <div id="box3d">
+
+        <div id="winClass"></div>
+
+        <div id="doorAa">
+            <div id="doorknobA"></div>
+        </div>
+        <div id="doorAb">
+            <div id="doorknobB"></div>
+        </div>
+
+    </div>
+    
+    <!--2ndfloor-->
+    <!--2ndFloor 1stRoom-->
+    <div id="box2a">
+
+        <div id="winClass"></div>
+
+        <div id="doorAa">
+            <div id="doorknobA"></div>
+        </div>
+        <div id="doorAb">
+            <div id="doorknobB"></div>
+        </div>
+    </div>
+
+    <!--2ndFloor 2ndRoom-->
+    <div id="box2b">
+
+        <div id="winClass"></div>
+
+        <div id="doorAa">
+            <div id="doorknobA"></div>
+        </div>
+        <div id="doorAb">
+            <div id="doorknobB"></div>
+        </div>
+    </div>
+
+    <!--2ndFloor 3rdRoom-->
+    <div id="box2c">
+
+        <div id="winClass"></div>
+
+        <div id="doorAa">
+            <div id="doorknobA"></div>
+        </div>
+        <div id="doorAb">
+            <div id="doorknobB"></div>
+        </div>
+
+    </div>
+
+    <!--1stfloor-->
+    <!--1stFloor 1stRoom-->
+    
+    <div id="box1a">
+
+        <div id="winClass"></div>
+
+        <div id="doorAa">
+            <div id="doorknobA"></div>
+        </div>
+        <div id="doorAb">
+            <div id="doorknobB"></div>
+        </div>
+    </div>
+
+    <!--1stFloor 2ndRoom-->
+    <div id="box1b">
+
+        <div id="winClass"></div>
+
+        <div id="doorAa">
+            <div id="doorknobA"></div>
+        </div>
+        <div id="doorAb">
+            <div id="doorknobB"></div>
+        </div>
+    </div>
+
+    <!--1stFloor 3rdRoom-->
+    <div id="box1c">
+
+        <div id="winClass"></div>
+
+        <div id="doorAa">
+            <div id="doorknobA"></div>
+        </div>
+        <div id="doorAb">
+            <div id="doorknobB"></div>
+        </div>
+    </div>
+
+
+    <!--railings-->
+    <div id="rail3A"></div>
+    <div id="rail3B"></div>
+
+    <div id="rail2A"></div>
+    <div id="rail2B"></div>
+
+    <div id="rail1A"></div>
+    <div id="rail1B"></div>
+
+    <div id="postA"></div>
+    <div id="postB"></div>
+    <div id="postC"></div>
+    <div id="postD"></div>
+    
+    <!--top-->
+    <div id="top"></div>
+
+
+    <!--window-->
+    <div id="window"></div>
+
+    <!--windowline-->
+    <div id="windowline1"></div>
+    <div id="windowline2"></div>
+    <div id="windowline3"></div>
+    <div id="windowline4"></div>
+
+    <!--windowlineVERTICAL-->
+    <div id="windowline1V"></div>
+    <div id="windowline2V"></div>
+    <div id="windowline3V"></div>
+    <div id="windowline4V"></div>
+
+    <!--sign-->
+    <div id="sign"><br>COLLEGE OF COMPUTER SCIENCE</div>
+
+
+    <!--lining-->
+    <div id="lign3A"></div>
+    <div id="lign3B"></div>
+    <div id="lign2A"></div>
+    <div id="lign2B"></div>
+    <div id="lign1A"></div>
+    <div id="lign1B"></div>
+
+    <!--entry-->
+    <div id="entry"></div>
+
+    <!--entryStairs-->
+    <div id="entryStairs1"></div>
+    <div id="entryStairs2"></div>
+
+    <!--floor-->
+    <div id="floor"></div>
+
+    <!--handrail-->
+    <div id="handrail"></div>
+    <div id="handrail2"></div>
+    
+   <!--stairs-->
+   <div id="s1"></div>
+   <div id="s2"></div>
+   <div id="s3"></div>
+
+   <div id="side">
+
+   </div>
+
+
+</body>
+</html>
